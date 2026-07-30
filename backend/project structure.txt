@@ -1,0 +1,22 @@
+loan-default-api/
+├── app/
+│   ├── main.py              # FastAPI app entrypoint
+│   ├── config.py            # settings (DB URL, secret keys, env vars)
+│   ├── database.py          # DB connection/session
+│   ├── models/
+│   │   ├── user.py          # SQLAlchemy User model
+│   │   └── prediction.py    # SQLAlchemy Prediction model (log every prediction)
+│   ├── schemas/
+│   │   ├── user.py          # Pydantic schemas (UserCreate, UserOut, Token)
+│   │   └── prediction.py    # Pydantic schemas (LoanApplicant, PredictionOut)
+│   ├── routers/
+│   │   ├── auth.py          # /register, /login
+│   │   └── predict.py       # /predict (protected route)
+│   ├── auth/
+│   │   ├── security.py      # password hashing, JWT creation/verification
+│   │   └── dependencies.py  # get_current_user dependency
+│   └── ml/
+│       └── model.py         # loads joblib model, wraps predict logic
+├── loan_default_model.joblib
+├── requirements.txt
+└── .env

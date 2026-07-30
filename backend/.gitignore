@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# env & secrets — critical, this has your secret_key and database_url
+.env
+
+# database
+*.db
+*.sqlite3
+
+# ML artifacts (optional — only ignore if you don't want the model file in git)
+# loan_default_model.joblib
+
+# Node / React frontend
+node_modules/
+dist/
+build/
+
+# editor/OS junk
+.vscode/
+.DS_Store
