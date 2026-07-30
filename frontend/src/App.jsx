@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ShieldCheck, TrendingUp, LockKeyhole, AlertTriangle, ArrowRight, LogOut, History, Cpu, X, Check } from "lucide-react";
 
-const API = "http://localhost:8000";
+const API = "https://loan-radar-v1.onrender.com";
 const T = { ink: "#0B0F14", panel: "#121820", panel2: "#1A222C", border: "#232C38", text: "#E8EDF2", muted: "#8593A3", gold: "#E8A33D", danger: "#E5484D", safe: "#3DD68C" };
 
 // ---- animated arc gauge (signature element) ----
