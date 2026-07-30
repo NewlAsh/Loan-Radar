@@ -88,7 +88,7 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 
 ```env
-DATABASE_URL=sqlite:///./loan_radar.db
+DATABASE_URL=sqlite:///./loan_radar.db  (for local device runtime)
 SECRET_KEY=your-secret-key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
